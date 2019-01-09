@@ -27,7 +27,7 @@ class App extends Component {
   addTodo(todoInput){
     /*
      * Create variables for state properties, because can't change state directly.
-     * Pass values to new variable and after changes, update state with setState();
+     * Pass values to new variables and after changes, update state with setState();
      */
     let todoList = this.state.todoList;
     let nextId = this.state.nextId + 1;
@@ -52,7 +52,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="toDoListAppWrapper">
+        <div className="toDoListWrapper">
           <Header />
           <TodoInput todoInput="" addTodo={this.addTodo}/>
           <div className="list">
